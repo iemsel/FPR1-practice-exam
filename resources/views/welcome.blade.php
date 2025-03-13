@@ -1,5 +1,5 @@
 <x-article>
-    <x-slot name="title">Welcome to the HZ HBO-ICT FPR1-TOETS01 exam template app.</x-slot>
+    <x-slot name="title">Welcome to the HZ HBO-ICT FPR1-TOETS01 exam template app</x-slot>
     <x-slot name="subtitle">This is the home page</x-slot>
     <div class="columns">
 
