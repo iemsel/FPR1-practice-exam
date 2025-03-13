@@ -12,9 +12,9 @@ class BarController extends Controller
      */
     public function index()
     {
-        return view('bars.index', [
-            'bars' => Bar::all()
-        ]);
+        $bars = Bar::paginate(5);
+
+        return view('bars.index', compact('bars'));
     }
 
     /**

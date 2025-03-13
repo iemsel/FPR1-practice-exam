@@ -33,6 +33,10 @@
                            class="navbar-item {{ request()->route()->getName() === 'articles.index' ? "is-active" : "" }}">
                             News
                         </a>
+                        <a href="{{ route('bars.index') }}"
+                           class="navbar-item {{ request()->route()->getName() === 'bars.index' ? "is-active" : "" }}">
+                            Bars
+                        </a>
                     </div>
                 </div>
             </div>

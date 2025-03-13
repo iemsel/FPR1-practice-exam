@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BarController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Article;
 use App\Http\Controllers\ArticleController;
@@ -13,3 +14,4 @@ Route::get('/', function () {
 
 // Resource routes of the base pages. For more info on Resource Routes
 Route::resource('/articles', ArticleController::class);
+Route::resource('/bars', BarController::class);
