@@ -5,6 +5,8 @@
                 {{ $bar->name }}
             </a>
             <br>
+            User: {{ $bar->user->name }}
+            <br>
             Waldo: {!! $bar->waldo !!}
             <br>
             Grault: {!!$bar->grault!!}
