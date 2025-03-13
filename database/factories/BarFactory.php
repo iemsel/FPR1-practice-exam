@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,6 +21,7 @@ class BarFactory extends Factory
             'name' => $this->faker->sentence(3),
             'waldo' => $this->faker->text(100),
             'grault' => $this->faker->randomDigitNotZero(),
+            'user_id' => User::inRandomOrder()->first()->id,
         ];
     }
 }

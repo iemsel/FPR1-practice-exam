@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Bar extends Model
 {
@@ -11,6 +12,9 @@ class Bar extends Model
 
     protected $fillable = ['name', 'waldo', 'grault'];
 
+    /*
+     * makes derived attribute ordan
+     */
     public function getOrdanAttribute()
     {
         if ($this->waldo === null) {
@@ -22,5 +26,13 @@ class Bar extends Model
         }
 
         return 'normal';
+    }
+
+    /*
+     * belongs to users
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }
