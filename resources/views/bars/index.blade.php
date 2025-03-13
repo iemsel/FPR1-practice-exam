@@ -10,10 +10,20 @@
                 </a>
             </div>
         </div>
+
+        <!-- Show session flash message if available -->
+        @if(session('success'))
+            <div class="notification is-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <!-- Loop through bars and display each one -->
         @foreach($bars as $bar)
             <x-bar.list-item :bar="$bar"></x-bar.list-item>
         @endforeach
 
+        <!-- Pagination links -->
         {{ $bars->links() }}
     </div>
 </x-main>

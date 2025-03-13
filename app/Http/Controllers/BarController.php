@@ -32,6 +32,7 @@ class BarController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required',
+            'waldo' => 'nullable',
             'grault' => 'numeric|required',
         ]);
 
@@ -71,6 +72,7 @@ class BarController extends Controller
         // Validate the request
         $validated = $request->validate([
             'name' => 'required',
+            'waldo' => 'nullable',
             'grault' => 'numeric|required',
         ]);
 
