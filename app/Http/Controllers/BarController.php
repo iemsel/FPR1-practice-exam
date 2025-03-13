@@ -32,8 +32,7 @@ class BarController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required',
-            'waldo' => 'required',
-            'grault' => 'required',
+            'grault' => 'numeric|required',
         ]);
 
         // Create a new Post model object, mass-assign its attributes with
@@ -72,8 +71,7 @@ class BarController extends Controller
         // Validate the request
         $validated = $request->validate([
             'name' => 'required',
-            'waldo' => 'required',
-            'grault' => 'required',
+            'grault' => 'numeric|required',
         ]);
 
         // Use `update` to mass (re)assign updated attributes
