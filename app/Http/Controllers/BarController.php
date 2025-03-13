@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bar;
 use Illuminate\Http\Request;
 
 class BarController extends Controller
