@@ -31,14 +31,19 @@
     "file": "assets/fa-v4compatibility-C9RhG_FT.woff2",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
+  "resources/css/app.css": {
+    "file": "assets/app-RhlIIJQM.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
-    "file": "assets/app-Xaw6OIO1.js",
+    "file": "assets/app-C6cp8IRy.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-C4OpWrBn.css",
+    "file": "assets/app-oc8Vqa0o.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }

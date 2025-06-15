@@ -37,6 +37,19 @@
                            class="navbar-item {{ request()->route()->getName() === 'bars.index' ? "is-active" : "" }}">
                             Bars
                         </a>
+
+                        </div>
+                    <div class="navbar-end">
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit" class="button is-light">
+                                            Logout ({{ Auth::user()->name }})
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
